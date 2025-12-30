@@ -26,3 +26,6 @@ __pycache__/
 
 # Keep assets directory structure but ignore temp files
 assets/**/.DS_Store
+
+# Ignore AI agent documentation
+AGENTS.md
