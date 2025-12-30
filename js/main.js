@@ -163,14 +163,19 @@ class PortfolioApp {
     renderPublications() {
         const list = document.getElementById('publications-list');
         
-        // Filter to only featured publications and sort by year to match live site
+        // Separate featured and non-featured publications
         const featuredPubs = this.data.publications
             .filter(pub => pub.featured)
-            .sort((a, b) => a.year - b.year); // Sort oldest first like live site
+            .sort((a, b) => b.year - a.year);
         
-        featuredPubs.forEach(pub => {
+        const otherPubs = this.data.publications
+            .filter(pub => !pub.featured)
+            .sort((a, b) => b.year - a.year);
+        
+        // Render all publications (featured first, then others)
+        [...featuredPubs, ...otherPubs].forEach((pub, index) => {
             const item = document.createElement('div');
-            item.className = 'publication-item';
+            item.className = index < featuredPubs.length ? 'publication-item' : 'publication-item hidden';
             item.dataset.type = pub.type;
             
             const authorsStr = pub.authors.join(', ');
@@ -183,20 +188,26 @@ class PortfolioApp {
                 linksHTML += `<a href="${pub.doi}" class="publication-link" target="_blank"><i class="fas fa-external-link-alt"></i> DOI</a>`;
             }
             
-            // Format venue with year like live site
-            const venueWithYear = `${pub.venue}${pub.doi ? '. ' + pub.doi : ''}.`;
-            
             item.innerHTML = `
                 <div class="publication-authors">${authorsStr} (${pub.year}).</div>
                 <h3 class="publication-title">
                     ${pub.doi ? `<a href="${pub.doi}" target="_blank">${pub.title}</a>` : pub.title}
                 </h3>
-                <div class="publication-venue">${pub.venue}.</div>
+                <div class="publication-venue">${pub.venue}</div>
                 ${linksHTML ? `<div class="publication-links">${linksHTML}</div>` : ''}
             `;
             
             list.appendChild(item);
         });
+        
+        // Add "Show More" button if there are non-featured publications
+        if (otherPubs.length > 0) {
+            const showMoreBtn = document.createElement('button');
+            showMoreBtn.className = 'show-more-button';
+            showMoreBtn.textContent = 'Show More Publications';
+            showMoreBtn.id = 'show-more-publications';
+            list.appendChild(showMoreBtn);
+        }
     }
 
     attachEventListeners() {
@@ -219,6 +230,15 @@ class PortfolioApp {
         const resumeButton = document.getElementById('resume-button');
         resumeButton?.addEventListener('click', () => {
             window.open('assets/Jones_Resume_ML.pdf', '_blank');
+        });
+        
+        // Show More Publications button
+        const showMoreBtn = document.getElementById('show-more-publications');
+        showMoreBtn?.addEventListener('click', () => {
+            document.querySelectorAll('.publication-item.hidden').forEach(item => {
+                item.classList.remove('hidden');
+            });
+            showMoreBtn.classList.add('hidden');
         });
         
         // Smooth scroll for anchor links
