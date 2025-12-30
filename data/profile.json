@@ -36,11 +36,6 @@
       "name": "Google Scholar",
       "icon": "fa-solid fa-graduation-cap",
       "url": "https://scholar.google.com/citations?user=KRBoSPoAAAAJ"
-    },
-    {
-      "name": "Email",
-      "icon": "fa-solid fa-envelope",
-      "url": "mailto:payton.jones@example.com"
     }
   ]
 }

@@ -215,6 +215,12 @@ class PortfolioApp {
             });
         });
         
+        // Resume button click handler
+        const resumeButton = document.getElementById('resume-button');
+        resumeButton?.addEventListener('click', () => {
+            window.open('assets/Jones_Resume_ML.pdf', '_blank');
+        });
+        
         // Smooth scroll for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', (e) => {
