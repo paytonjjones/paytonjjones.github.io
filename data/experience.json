@@ -1,0 +1,54 @@
+[
+  {
+    "title": "Staff Machine Learning Engineer",
+    "company": "MyFitnessPal",
+    "location": "Seattle, WA",
+    "startDate": "2025-06-23",
+    "endDate": null,
+    "current": true,
+    "description": [
+      "Create machine learning solutions for personalization on the home page, meal scan, and voice logging features",
+      "Engineer new AI features leveraging state-of-the-art multimodal LLMs",
+      "Mentor team members and improve the maturity, reliability, and scalability of machine learning capabilities"
+    ]
+  },
+  {
+    "title": "Senior Data Scientist (Tech Lead)",
+    "company": "Moloco",
+    "location": "Seattle, WA",
+    "startDate": "2024-04-01",
+    "endDate": "2025-06-21",
+    "current": false,
+    "description": [
+      "As Tech Lead, analyze, manage, and improve a massive ad-tech data ecosystem including internal and third-party data with billions of records.",
+      "Design, lead, and analyze complex experiments for ML strategies directly impacting customers with eight-figure ad spend.",
+      "Define, develop, and engineer key metrics for operational success and ads performance."
+    ]
+  },
+  {
+    "title": "Senior Data Scientist",
+    "company": "Pluralsight",
+    "location": "Remote (Seattle, WA)",
+    "startDate": "2020-07-15",
+    "endDate": "2024-03-31",
+    "current": false,
+    "description": [
+      "Built and scaled production-level deep learning recommenders to millions of users, handling variable request volumes with <50ms latency.",
+      "Extended personalized recommendations to 44.3% more users, boosting clickthrough rate by 25.4%.",
+      "Pioneered the implementation of a centralized A/B testing framework, communicating experiment findings to the executive suite during product reviews."
+    ]
+  },
+  {
+    "title": "Data Scientist",
+    "company": "Hyka Therapeutics",
+    "location": "Boston, MA",
+    "startDate": "2019-11-01",
+    "endDate": "2020-07-01",
+    "current": false,
+    "description": [
+      "Developed machine learning recommendation algorithms for therapeutic content deliverables.",
+      "Implemented digital phenotyping & psychometric software.",
+      "Provided solutions for data analyses & visualizations of real-time mental health data."
+    ]
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "rent-buy-cal",
+    "title": "Advanced Rent vs. Buy Calculator",
+    "summary": "Interactive open-source calculator and visualizations for making the decision to rent or buy",
+    "tags": [
+      "Open Source Tools"
+    ],
+    "image": "assets/projects/rent-buy-cal.png",
+    "externalLink": "https://paytonjones.shinyapps.io/advanced_rent_buy_calculator/",
+    "featured": false
+  },
+  {
+    "id": "networktools",
+    "title": "networktools R package",
+    "summary": "Tools for psychometric networks. Bridge centrality, MDS plotting, and related functions.",
+    "tags": [
+      "Open Source Tools"
+    ],
+    "image": "assets/projects/networktools.jpg",
+    "externalLink": "https://cran.r-project.org/web/packages/networktools/networktools.pdf",
+    "featured": false
+  },
+  {
+    "id": "networktree",
+    "title": "networktree R package",
+    "summary": "Machine learning based partitioning for psychometric network models",
+    "tags": [
+      "Machine Learning",
+      "Open Source Tools"
+    ],
+    "image": "assets/projects/networktree.jpg",
+    "externalLink": "https://paytonjjones.github.io/networktree/",
+    "featured": false
+  },
+  {
+    "id": "what-statistic",
+    "title": "What Statistic? R Shiny",
+    "summary": "An interactive tool for learning statistical testing methods in R.",
+    "tags": [
+      "Open Source Tools"
+    ],
+    "image": "assets/projects/what-statistic.png",
+    "externalLink": "https://paytonjones.shinyapps.io/what_statistic/",
+    "featured": false
+  }
+]

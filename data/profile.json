@@ -1,0 +1,46 @@
+{
+  "name": "Payton Jones",
+  "role": "Staff Machine Learning Engineer",
+  "organization": "MyFitnessPal",
+  "bio": "Payton is a Staff Machine Learning Engineer at MyFitnessPal. He has 6+ years of ML experience across health technology, edtech, and adtech. He graduated with a Ph.D. in Experimental Psychopathology from Harvard University.",
+  "avatar": "assets/avatar.jpg",
+  "interests": [
+    "Machine Learning",
+    "Research",
+    "Data Science"
+  ],
+  "education": [
+    {
+      "degree": "PhD, Experimental Psychopathology",
+      "institution": "Harvard University",
+      "year": 2021
+    },
+    {
+      "degree": "BS, Psychology",
+      "institution": "Brigham Young University",
+      "year": 2016
+    }
+  ],
+  "social": [
+    {
+      "name": "GitHub",
+      "icon": "fa-brands fa-github",
+      "url": "https://github.com/paytonjjones"
+    },
+    {
+      "name": "LinkedIn",
+      "icon": "fa-brands fa-linkedin",
+      "url": "https://www.linkedin.com/in/paytonjones/"
+    },
+    {
+      "name": "Google Scholar",
+      "icon": "fa-solid fa-graduation-cap",
+      "url": "https://scholar.google.com/citations?user=KRBoSPoAAAAJ"
+    },
+    {
+      "name": "Email",
+      "icon": "fa-solid fa-envelope",
+      "url": "mailto:payton.jones@example.com"
+    }
+  ]
+}

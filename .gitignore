@@ -1,0 +1,28 @@
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Ignore node_modules if using npm for development
+node_modules/
+
+# Ignore Python cache if using Python scripts
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore backup files
+*.bak
+*.backup
+
+# Ignore log files
+*.log
+
+# Keep assets directory structure but ignore temp files
+assets/**/.DS_Store

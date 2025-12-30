@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payton Jones - Staff Machine Learning Engineer</title>
+    <meta name="description" content="Payton Jones is a Staff Machine Learning Engineer at MyFitnessPal with a PhD from Harvard University.">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="assets/icon.png" alt="PJ" class="nav-brand-icon">
+                Payton Jones
+            </div>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#publications" class="nav-link">Publications</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Profile + About Section -->
+    <section id="about" class="section profile-about-section">
+        <div class="container">
+            <div class="profile-about-grid">
+                <!-- Left: Profile -->
+                <div class="profile-column">
+                    <div class="profile-avatar">
+                        <img id="profile-avatar" src="" alt="Payton Jones">
+                    </div>
+                    <h1 class="profile-name" id="profile-name">Payton Jones</h1>
+                    <h2 class="profile-role" id="profile-role">Staff Machine Learning Engineer</h2>
+                    <h3 class="profile-org" id="profile-org">MyFitnessPal</h3>
+                    <div class="profile-links" id="profile-links"></div>
+                </div>
+                
+                <!-- Right: About -->
+                <div class="about-column">
+                    <h2 class="section-title">About</h2>
+                    <p id="about-bio"></p>
+                    <div class="interests-education-grid">
+                        <div id="about-interests"></div>
+                        <div id="about-education"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid" id="projects-grid"></div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline" id="experience-timeline"></div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="section publications-section">
+        <div class="container">
+            <h2 class="section-title">Selected Publications</h2>
+            <p class="publications-intro">
+                <a href="https://scholar.google.com/citations?user=KRBoSPoAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="scholar-link">
+                    List of all publications (Google Scholar)
+                </a>
+            </p>
+            <div class="publications-list" id="publications-list"></div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>
