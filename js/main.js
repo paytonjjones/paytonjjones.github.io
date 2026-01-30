@@ -162,14 +162,16 @@ class PortfolioApp {
 
     renderPublications() {
         const list = document.getElementById('publications-list');
-        
-        // Separate featured and non-featured publications
+
+        // Only show publications where I'm an author
+        const isMyPublication = (pub) => pub.authors.some(author => author.includes('Payton Jones'));
+
+        // Separate featured and non-featured publications (only my publications)
         const featuredPubs = this.data.publications
-            .filter(pub => pub.featured)
             .sort((a, b) => b.year - a.year);
-        
+
         const otherPubs = this.data.publications
-            .filter(pub => !pub.featured)
+            .filter(pub => !pub.featured && isMyPublication(pub))
             .sort((a, b) => b.year - a.year);
         
         // Render all publications (featured first, then others)
